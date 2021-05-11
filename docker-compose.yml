@@ -15,7 +15,7 @@ services:
     container_name: users-service
     build: ./
     volumes:
-      - '/C/Users/lpqn1079/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/lipeiqing/wind/flask-microservices-users:/usr/src/app'
+      - '.:/usr/src/app'
     ports:
       - 5001:5000 # 暴露端口 - 主机:容器
     environment:
